@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>516</x>
+      <y>366</y>
+      <w>72</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>USER
+--
+User_ID
+Username
+Email
+Password
+Join Date 
+Profile Picture
+Bio
+Interest
+Recovery Email
+Country
+Date Of Birth
+/Age</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>90</y>
+      <w>78</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>THREAD
+--
+Thread_ID
+Creation Date
+Last Modified Date
+Creator User_ID
+Moderator_ID</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>462</y>
+      <w>78</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>POST
+--
+Post_ID
+Content
+Creation Date
+Last Modified Date
+Thread_ID
+User_ID
+Tag_ID</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>324</x>
+      <y>456</y>
+      <w>66</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>COMMENT
+--
+Comment_ID
+Content
+Creation Date
+Last Edited Date
+User_ID
+Post_ID</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>858</x>
+      <y>132</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>TAG
+--
+Tag_ID
+Name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>120</y>
+      <w>66</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>NOTIFICATION
+--
+Notification_ID
+User_ID
+Content 
+Timestamp
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>366</y>
+      <w>54</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>REPORT
+--
+Report_ID
+User_ID
+Comment_ID
+Reason
+Timestamp</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>246</y>
+      <w>54</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>VOTE
+--
+Vote_ID
+User_ID
+Comment_ID
+Is_Upvote</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>234</y>
+      <w>60</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>MODERATOR
+--
+User_ID
+Thread_ID
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>582</x>
+      <y>366</y>
+      <w>114</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n
+creates &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;160.0;170.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>738</x>
+      <y>132</y>
+      <w>132</w>
+      <h>342</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+contains &gt;</panel_attributes>
+    <additional_attributes>10.0;550.0;10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>372</y>
+      <w>144</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+makes a &gt;</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;50.0;110.0;50.0;110.0;20.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>462</y>
+      <w>312</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+has &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;130.0;140.0;130.0;500.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>300</y>
+      <w>108</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+contains &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>246</y>
+      <w>264</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+votes &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;170.0;420.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>126</y>
+      <w>204</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+for &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;290.0;240.0;290.0;310.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>372</y>
+      <w>192</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+of &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0;180.0;150.0;300.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>114</x>
+      <y>432</y>
+      <w>222</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+has a &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0;350.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>84</y>
+      <w>108</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n
+contains &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0;140.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>240</y>
+      <w>114</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+is a &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>84</y>
+      <w>150</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=1..n
+has a</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>582</x>
+      <y>162</y>
+      <w>54</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..n
+creates &gt;</panel_attributes>
+    <additional_attributes>10.0;340.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
