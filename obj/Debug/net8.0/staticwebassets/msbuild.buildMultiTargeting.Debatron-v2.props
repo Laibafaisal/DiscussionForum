@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Debatron-v2.props" />
+</Project>
