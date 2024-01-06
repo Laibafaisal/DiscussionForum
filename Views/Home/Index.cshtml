@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "www.debatron.com";
+}
+
+<main>
+    <section class="row" aria-labelledby="appTitle">
+        <h1 id="title">DEBATRON</h1>
+        <h4>Sparking Minds Igniting Conversations</h4>
+        <p class="lead">DEBATRON is an online discussion forum designed using ASP.NET MVC.</p>
+        <p><a href="About" class="btn btn-outline-dark">ABOUT US</a></p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Getting started?</h2>
+            <p>
+                Discover Debatron, your go-to online forum for lively and insightful discussions. Dive into diverse topics,
+                from tech to culture, and join a welcoming community passionate about open dialogue.
+                Sign up today to connect with like-minded individuals, broaden your horizons, and contribute to meaningful conversations.
+                Join Debatron – where your opinions matter!
+            </p>
+            <!--<p><a class="btn btn-outline-dark" href="User/SignUp">SIGN UP &raquo;</a></p>-->
+            <p><a class="btn btn-outline-dark" href="@Url.Action("SignUp", "Account")">SIGN UP </a></p>
+
+        </section>
+        <section class="col-md-4" aria-labelledby="loginTitle">
+            <h2 id="librariesTitle">Already a member?</h2>
+            <p>
+                Embark on a journey of vibrant conversations and diverse perspectives at Debatron, your premier online discussion forum.
+                As we continue to foster a community of insightful dialogues, your voice is crucial.
+                Share your thoughts, connect with fellow members, and contribute to the richness of our discussions.
+                Your insights matter—log in and let the conversations begin!
+            </p>
+            <p><a class="btn btn-outline-dark" href="@Url.Action("Login", "Account")">LOGIN</a></p>
+            <!--<p><a class="btn btn-outline-dark" href="">LOGIN &raquo;</a></p>-->
+        </section>
+
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2>Have any comments or suggestions?</h2>
+            <p>Connect with us – we're eager to hear your comments and suggestions! Email us to contribute to the growth of the Debatron community.</p>
+            <p><a class="btn btn-outline-dark" href="@Url.Action("Contact", "Home")">CONTACT US</a></p>
+        </section>
+    </div>
+</main>
