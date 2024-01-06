@@ -11,6 +11,8 @@ namespace Debatron_v1._0.Models
 
         public string Name { get; set; }
         public string Bio { get; set; }
+
+
         /*public bool LoginProcess(string e, string p)
         {
             SqlConnection con = new SqlConnection(constr);
