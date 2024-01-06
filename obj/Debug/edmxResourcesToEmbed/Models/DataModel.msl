@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DebatronContext">
+    <EntitySetMapping Name="comments">
+      <EntityTypeMapping TypeName="Model.comment">
+        <MappingFragment StoreEntitySet="comment">
+          <ScalarProperty Name="Comment_ID" ColumnName="Comment_ID" />
+          <ScalarProperty Name="CommentContent" ColumnName="CommentContent" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Post_ID" ColumnName="Post_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="posts">
+      <EntityTypeMapping TypeName="Model.post">
+        <MappingFragment StoreEntitySet="post">
+          <ScalarProperty Name="Post_ID" ColumnName="Post_ID" />
+          <ScalarProperty Name="PostContent" ColumnName="PostContent" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Tag_ID" ColumnName="Tag_ID" />
+          <ScalarProperty Name="Thread_ID" ColumnName="Thread_ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tags">
+      <EntityTypeMapping TypeName="Model.tag">
+        <MappingFragment StoreEntitySet="tag">
+          <ScalarProperty Name="Tag_ID" ColumnName="Tag_ID" />
+          <ScalarProperty Name="TagContent" ColumnName="TagContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="threads">
+      <EntityTypeMapping TypeName="Model.thread">
+        <MappingFragment StoreEntitySet="thread">
+          <ScalarProperty Name="Thread_ID" ColumnName="Thread_ID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatorUser_ID" ColumnName="CreatorUser_ID" />
+          <ScalarProperty Name="ThreadTitle" ColumnName="ThreadTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="Model.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Bio" ColumnName="Bio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
